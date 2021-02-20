@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generate</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- External -->
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+  <body>
+    <div class="filter-content">
+      <div class="filter-label">Filter</div>
+      <div class="filter-input">
+        <label for="">Characters quantity:</label>
+        <input id="characters-input" type="number">
+      </div>
+
+      <div style="font-size: 1.7rem; font-weight: bold; margin: 50px 0px 0px 20px;">
+        <span>Include on generate:</span>
+      </div>
+
+      <hr style="border: 1px solid #aaa; width: 350px;">
+
+      <div class='content-checkbox'>
+        <input id="upper-case-checkbox" class="filter-checkbox" type="checkbox">
+        <label for="">Upper case words</label>
+      </div>
+
+      <div class='content-checkbox'>
+        <input id="number-checkbox" class="filter-checkbox" type="checkbox">
+        <label for="">Numbers</label>
+      </div>
+
+      <div class='content-checkbox'>
+        <input id="special-character-checkbox" class="filter-checkbox" type="checkbox">
+        <label for="">Special characters</label>
+      </div>
+    </div>
+
+    <div class="content">
+      <h1>Password Generator</h1>
+      <div class="input-content">
+        <input id="password-input" type="text" disabled>
+        <button id="copy-button">
+          <span class="material-icons">
+            content_copy
+          </span>
+        </button>
+      </div>
+      <button id="generate-button">Generate</button>
+    </div>
+    
+    <!-- Javascript -->
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script type="text/javascript" src="utils/db.js"></script>
+    <script type="text/javascript" src="common/text.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="events/index.js"></script>
+
+  </body>
+</html>
