@@ -18,28 +18,37 @@
       <div class="filter-label">Filter</div>
       <div class="filter-input">
         <label for="">Characters quantity:</label>
-        <input id="characters-input" type="range" min="4" max="32">
+        <input 
+          id="characters-input" 
+          class="slider" 
+          type="range" 
+          min="4" 
+          max="32" 
+          value="4"
+          >
       </div>
 
-      <div style="font-size: 1.7rem; font-weight: bold; margin: 50px 0px 0px 20px;">
+      <div style="font-size: 1.7rem; color: #1a1b1c; font-weight: bold; margin: 50px 0px 0px 20px;">
         <span>Include on generate:</span>
       </div>
 
       <hr style="border: 1px solid #aaa; width: 350px;">
 
-      <div class='content-checkbox'>
-        <input id="upper-case-checkbox" class="filter-checkbox" type="checkbox">
-        <label for="">Upper case words</label>
-      </div>
-
-      <div class='content-checkbox'>
-        <input id="number-checkbox" class="filter-checkbox" type="checkbox">
-        <label for="">Numbers</label>
-      </div>
-
-      <div class='content-checkbox'>
-        <input id="special-character-checkbox" class="filter-checkbox" type="checkbox">
-        <label for="">Special characters</label>
+      <div>
+        <label class="container">Uppercase letters
+          <input id="upper-case-checkbox" class="filter-checkbox" type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+  
+        <label class="container">Numbers
+          <input id="number-checkbox" class="filter-checkbox" type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+  
+        <label class="container">Special characters
+          <input id="special-character-checkbox" class="filter-checkbox" type="checkbox">
+          <span class="checkmark"></span>
+        </label>
       </div>
     </div>
 
