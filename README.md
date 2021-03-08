@@ -30,6 +30,6 @@ Nesse desafio o objetivo era criar uma interface onde o usuário possa criar sen
 
 <br />
 
-👾 Da uma conferida lá no <a href="https://password-generator-react-app.netlify.app/">Preview</a>
+👾 Da uma conferida lá no <a href="https://password-generator-pablo.netlify.app/">Preview</a>
 
 Valeus 🖖
